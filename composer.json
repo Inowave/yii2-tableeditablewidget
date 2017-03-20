@@ -6,14 +6,14 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Inowave",
+            "name": "Inowave"
         }
     ],
     "require": {
         "yiisoft/yii2": "*",
-		"inowave/yii2-inputmaskwidget": "1.0.0",
-        "inowave/yii2-select2widget": "1.0.0",
-		"inowave/yii2-timepickerwidget": "1.0.0"
+		"inowave/yii2-inputmaskwidget": "1.0.1",
+        "inowave/yii2-select2widget": "1.0.1",
+		"inowave/yii2-timepickerwidget": "1.0.1"
     },
     "autoload": {
         "psr-4": {
