@@ -1,0 +1,23 @@
+{
+    "name": "inowave/yii2-tableeditablewidget",
+    "description": "x-editable as yii2 widget",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","x-editable","js"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Inowave",
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*",
+		"inowave/yii2-inputmaskwidget": "1.0.0",
+        "inowave/yii2-select2widget": "1.0.0",
+		"inowave/yii2-timepickerwidget": "1.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "inowave\\tableeditablewidget\\": ""
+        }
+    }
+}

@@ -1,0 +1,297 @@
+.tablewidget_wrap {
+	position: relative;
+} 
+.tablewidget {
+	overflow: hidden;
+	position: relative;
+	z-index: 2;
+}
+.tablewidget table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0px;
+	word-break: break-all;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+.tablewidget table.body_table tr:hover , .tablewidget table.body_table tr:hover td {
+	background-color: #C9D4FF !important;
+}
+.tablewidget table td, .tablewidget table th {
+	/*padding: 5px 8px;*/
+	padding: 0px;
+	font-size: 14px;
+	/*overflow: hidden;*/
+	/*box-sizing: border-box;*/
+	box-sizing: content-box;
+	position: relative;
+	z-index: 1;
+}
+.tablewidget table th {
+	font-weight: bold;
+	padding: 5px 0px;
+}
+.tablewidget table td {
+	vertical-align: top;
+	height: 30px;
+	min-height: 30px;
+	position: relative;
+}
+
+.tablewidget table.headers_table {
+	border: #ccc solid 1px;
+	border-right: medium none;
+}
+.tablewidget table.headers_table th, .tablewidget table.body_table td {
+	border-right: #ccc solid 1px;
+}
+.tablewidget table.body_table {
+	border-left: #ccc solid 1px;
+	border-bottom: #ccc solid 1px;
+}
+.tablewidget table.body_table td {
+	border-bottom: #ccc solid 1px;
+}
+.tablewidget table.body_table tr:last-of-type td {
+	border-bottom: medium none;
+}
+ .tablewidget table.body_table td input.thVal {
+ 	border: #333 solid 1px;
+ 	padding: 3px 7px;
+ }
+ .tablewidget .table_body_wrap {
+  	overflow-y: auto;
+  	overflow-x: hidden;
+ }
+ 
+ .table_collist {
+ 	position: relative;
+ 	width: 200px;
+ 	height: 30px; 	
+ 	margin-bottom: 20px;
+ 	margin-top: 10px;
+ 	float: right;
+ 	z-index: 50;
+ }
+ .table_collist .collist_title {
+ 	height: 100%;
+ 	font-size: 14px;
+ 	box-sizing: border-box;
+ 	padding: 4px 8px;
+ 	line-height: 22px;
+ 	border: #ccc solid 1px;
+ 	cursor: pointer;
+ }
+ .table_collist .collist_list {
+ 	position: absolute;
+ 	border: #ccc solid 1px;
+ 	background-color: #ffffff;
+ 	min-width: 100%;
+ 	box-sizing: border-box;
+ 	padding: 4px 8px; 	
+ 	display: none;
+ }
+  .table_collist:hover .collist_list {
+  	display: block;
+  }
+ .table_collist .collist_list label {
+ 	display: block;
+ 	font-size: 14px;
+ 	margin-top: 4px;
+ 	margin-bottom: 4px;
+ 	
+ 	 -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+ }
+ .table_collist .collist_list label input {
+ 	display: inline-block;
+ 	vertical-align: middle;
+ }
+.tablewidget table.body_table td a {
+ /*	border-bottom: dashed 1px #1C5DA3;*/
+	border: medium none;
+ 	color: #1C5DA3;
+ }
+.editable-checklist, .editable-radiolist {
+	max-height: 120px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	padding-right: 20px;
+}
+.editable-checklist {
+	
+}
+.editable-radiolist label {
+	white-space: nowrap;
+	display: block;
+}
+.editable-radiolist label input[type="radio"], .editable-radiolist label span {
+	vertical-align: middle;
+	margin: 0;
+}
+.editable-radiolist label span {
+	margin-left: 2px;	
+}
+.input-large {
+	width: 300px;
+}
+/*
+.pickerButton {
+	display: block;
+	float: right;
+	height: 17px;
+	width: 17px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	text-align: center;
+	line-height: 32px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+	margin-left: -1px;
+	margin-top: 2px;
+	z-index: 2;
+	text-indent: -9999px;
+	background: url('/img/reflex/images/icon_clock.png') center no-repeat #ddd;
+	background-size: 10px 10px;
+}*/
+.ui-datepicker-trigger {
+	width: 16px;
+	height: 15px;
+	margin-top: 2px;
+	margin-left: 2px;
+}
+.editable-buttons {
+	display: block;	
+}
+.editable-inline .editable-input > input, .editable-inline .editable-input > textarea , .editable-inline .editable-input > select {
+	border: medium none;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;	
+	box-sizing: border-box;
+	padding-left: 8px;
+}
+.editable-inline .editable-input textarea {
+	resize: none;
+}
+.editable-container.editable-inline {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	display: block;
+	overflow: hidden;
+}
+.editable-container.editable-inline > div, .editable-container.editable-inline .editableform , .editable-container.editable-inline .editableform .control-group, .editable-container.editable-inline .editableform .control-group > div,.editable-container.editable-inline .editable-input {
+	height: 100%;
+	width: 100%;
+}
+.tablewidget table.body_table td > a, .tablewidget table.body_table td > span {
+	height: 100%;
+	width: 100%;
+	max-width: 100%;
+	display: block;
+	cursor: pointer;
+	border:  medium none;
+	box-sizing: border-box;
+	padding: 5px 8px;
+	overflow: hidden;
+}
+.tablewidget table.body_table td > span.editable-container {
+	padding: 0px;
+}
+
+.tablewidget table.body_table td:hover {
+	z-index: 5;
+}
+.tablewidget table.body_table td[data-type="text"][data-inputclass="editable_text_field"] > a, .tablewidget table.body_table td[data-type="text"][data-inputclass="editable_text_field"] > span.editable_span,
+.tablewidget table.body_table td[data-type="textarea"] > a, .tablewidget table.body_table td[data-type="textarea"] > span.editable_span {
+	white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.tablewidget table.body_table td[data-type="text"][data-inputclass="editable_text_field"] > a:hover, .tablewidget table.body_table td[data-type="text"][data-inputclass="editable_text_field"] > span.editable_span:hover,
+.tablewidget table.body_table td[data-type="textarea"] > a:hover, .tablewidget table.body_table td[data-type="textarea"] > span.editable_span:hover {
+    overflow: visible; 
+    white-space: normal; 
+   /* min-width: 200px;*/
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color:#FFF;
+    border: #ddd solid 1px;
+    -webkit-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.51);
+	-moz-box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.51);
+	box-shadow: 0px 6px 11px 0px rgba(0,0,0,0.51);
+}
+/*#data:hover+div {
+    margin-top:20px;
+}*/
+
+.ui-button-icon-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -8px;
+	margin-left: -8px;
+}
+.select2-container-multi .select2-choices {
+	border: medium none;	
+}
+.ui-tooltip .ui-tooltip-content > label {
+	white-space: nowrap;
+}
+.select2-container {
+	width: 100%;
+} 
+.editable-input textarea {
+	width: 300px;
+}
+.editable-radiolist .editable_inlineradiolist {
+	display: inline;
+	margin-right: 15px;
+}
+.editable-file {
+	overflow: hidden;
+	height: 100%;
+}
+.editable-file .choose_file_button {
+	margin-left: 8px;
+	margin-top: 3px;
+}
+.choose_file_button {
+	background: #d7ebf9 url("../img/ui-bg_glass_80_d7ebf9_1x400.png") repeat-x scroll 50% 50%;
+    border: 1px solid #aed0ea;
+    color: #2779aa;
+    font-weight: bold;
+	border-radius: 6px;
+	padding: 0.2em 1em;
+}
+.choose_file_button:hover, .choose_file_button:focus {
+	background: #e4f1fb url("../img/ui-bg_glass_100_e4f1fb_1x400.png") repeat-x scroll 50% 50%;
+    border: 1px solid #74b2e2;
+    color: #0070a3;
+}
+.choose_file_button:active {
+	background: #3baae3 url("../img/ui-bg_glass_50_3baae3_1x400.png") repeat-x scroll 50% 50%;
+    border: 1px solid #2694e8;
+    color: #ffffff;
+}
+.editable-inline .form-inline .control-group > div {
+	position: relative;
+	z-index: 10;
+}
+.editable-inline .form-inline .control-group div.editable-error-block {
+	position: absolute;
+	z-index: 4;
+	top: 0px;
+	height: 100%;
+	text-align: right;
+	margin: 0px;
+	box-sizing: border-box;
+}
